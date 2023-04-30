@@ -253,3 +253,31 @@
   securityQuestion:
     id: 10
     answer: "Used Ship Emporium" # https://monkeyisland.fandom.com/wiki/Stan_S._Stanman
+-
+  email: dimitrijatimeskidimitrija
+  password: 'cypress12345'
+  key: admin
+  role: 'admin'
+  securityQuestion:
+    id: 2
+    answer: '@xI98PxDO+06!'
+  feedback:
+    comment: 'I love this shop! Best products in town! Highly recommended!'
+    rating: 5
+  address:
+    - fullName: 'Administrator'
+      mobileNum: 1234567890
+      zipCode: '4711'
+      streetAddress: '0815 Test Street'
+      city: 'Test'
+      state: 'Test'
+      country: 'Test'
+  card:
+    - fullName: 'Administrator'
+      cardNum: 4716190207394368
+      expMonth: 2
+      expYear: 2081
+    - fullName: 'Administrator'
+      cardNum: 4024007105648108
+      expMonth: 4
+      expYear: 2086
