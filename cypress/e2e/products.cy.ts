@@ -25,8 +25,17 @@ describe("template spec", () => {
     cy.get(".fa-3x.warn-notification").should("have.text", "0");
   });
 
-  // it("User should be able to add item into basket with POM", () => {
+  it("User should check that the item is not in stock and cannot be added to basket", () => {
+    cy.get(".mat-search_icon-search").click();
+    cy.get("#mat-input-0").type('OWASP Juice Shop "King of the Hill" Facemask');
+    cy.get("#mat-input-0").type("{enter}");
+    cy.get('[aria-label="Add to Basket"]').click();
+    cy.get('[class="mat-simple-snack-bar-content"]').should("have.text", "We are out of stock! Sorry for the inconvenience.");
+  });
+  
+  // it("POM: User should be able to add item into basket", () => {
   //   products.addItemToBasket("apple juice");
   //   products.verifyItemAddedToBasket("1");
   // });
 });
+
