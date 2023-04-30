@@ -6,6 +6,8 @@ export class ProductElements{
             getTxtSearch: () => cy.get('#mat-input-0'),
             getBtnAddToBasket: () => cy.get('[aria-label="Add to Basket"]'),
             getLblNotification: () => cy.get('.fa-3x.warn-notification'),
+            getBtnRemoveFromBasket: () => cy.get('[class="mat-focus-indicator mat-icon-button mat-button-base"]'),
+            getLblOutOfStock: () => cy.get('[class="mat-simple-snack-bar-content"]')
         }
     }
 }
